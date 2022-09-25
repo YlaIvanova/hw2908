@@ -12,10 +12,12 @@ public class Main {
         var book1 = new Book(author1,"Радуга", 2007);
         var book2 = new Book(author2,"Неизвестность", 1999);
 
-        System.out.println( book.getAuthor() +" "+ book.getTitleOfTheBook()+" "+book.getYearOfPublication());
-
+        //System.out.println( book.getAuthor() +" "+ book.getTitleOfTheBook()+" "+book.getYearOfPublication());
+        System.out.println(book);
+        System.out.println(book.hashCode() == book1.hashCode());
+        System.out.println(book.equals(book1));
 
         //book1.setYearOfPublication(2022);
-        System.out.println( book1.getAuthor() +" "+ book1.getTitleOfTheBook()+" "+book1.getYearOfPublication());
+        //System.out.println( book1.getAuthor() +" "+ book1.getTitleOfTheBook()+" "+book1.getYearOfPublication());
     }
 }
